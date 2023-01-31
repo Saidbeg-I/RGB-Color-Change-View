@@ -153,7 +153,6 @@
                         <outlet property="greenColorLabel" destination="s4m-hP-d7S" id="0UW-FK-NOg"/>
                         <outlet property="greenSlider" destination="yQv-Pt-GrU" id="fmf-52-OTS"/>
                         <outlet property="greenValueSliderLabel" destination="4n3-Up-OS2" id="NDN-KV-xul"/>
-                        <outlet property="randomColorView" destination="jl4-HA-LHx" id="Waw-bw-bW1"/>
                         <outlet property="redNameLabel" destination="IMa-Sr-qUw" id="67W-bg-4v3"/>
                         <outlet property="redSlider" destination="3JK-b3-gND" id="oKc-23-MgQ"/>
                         <outlet property="redValueSliderLabel" destination="5qa-wx-Vuw" id="bQS-yh-8Ux"/>

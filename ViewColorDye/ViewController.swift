@@ -24,7 +24,6 @@ class ViewController: UIViewController {
     
     @IBOutlet var changeableColorView: UIView!
     
-    @IBOutlet var randomColorView: UIView!
     
     
     override func viewDidLoad() {
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
         setupColoredLabel()
         setupValueSliderLabel()
         setupSlider()
+        changeableColorView.layer.cornerRadius = 15
         
     }
     
@@ -53,6 +53,7 @@ class ViewController: UIViewController {
          changeableColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
          
      }
+    
 
     private func setupSlider(){
         
