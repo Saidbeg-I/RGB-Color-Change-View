@@ -7,6 +7,8 @@
 
 import UIKit
 
+// MARK: - IB Outlets
+
 class ViewController: UIViewController {
 
     @IBOutlet var redSlider: UISlider!
@@ -18,21 +20,29 @@ class ViewController: UIViewController {
     @IBOutlet var greenLabel: UILabel!
     @IBOutlet var bluerLable: UILabel!
     
-    @IBOutlet var changeableColorView: UIView!
+    @IBOutlet var colorView: UIView!
     
-    
+    //MARK: - LifeCicle View
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupValueSliderLabel()
+        setupLabel()
         setupSlider()
-        changeableColorView.layer.cornerRadius = 15
+        
+        colorView.layer.cornerRadius = 15
+        
+        colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value), alpha: 1
+        )
+        
         
     }
     
+    //MARK: - IBAction
     
-    
-    @IBAction func rgbChangesColorSlider() {
+    @IBAction func rgbColorSlider() {
         redLabel.text = String(format: "%.2f", (redSlider.value))
         greenLabel.text = String(format: "%.2f", (greenSlider.value))
         bluerLable.text = String(format: "%.2f", (blueSlider.value))
@@ -45,11 +55,13 @@ class ViewController: UIViewController {
     // MARK: - Private Methods
     
     private  func changeColor (){
-         changeableColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+         colorView.backgroundColor = UIColor(
+            red: CGFloat(redSlider.value),
+            green: CGFloat(greenSlider.value),
+            blue: CGFloat(blueSlider.value), alpha: 1
+         )
          
      }
-    
-
     private func setupSlider(){
         
         redSlider.thumbTintColor = .red
@@ -62,8 +74,7 @@ class ViewController: UIViewController {
         blueSlider.thumbTintColor = .blue
         
     }
-    
-    private func setupValueSliderLabel(){
+    private func setupLabel(){
         
         redLabel.text = String(format: "%.2f", (redSlider.value))
         greenLabel.text = String(format: "%.2f", (greenSlider.value))
@@ -78,8 +89,6 @@ class ViewController: UIViewController {
         bluerLable.textColor = .white
         bluerLable.font = bluerLable.font.withSize(15)
     }
-    
-
 
 }
 

@@ -90,19 +90,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3JK-b3-gND">
                                                 <rect key="frame" x="-2" y="0.0" width="226.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbChangesColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="VCc-2B-S1G"/>
+                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="VCc-2B-S1G"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-Pt-GrU">
                                                 <rect key="frame" x="-2" y="40" width="226.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbChangesColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="siV-BA-x6g"/>
+                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="siV-BA-x6g"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-OK-AQx">
                                                 <rect key="frame" x="-2" y="80" width="226.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbChangesColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="rGt-Rq-3AI"/>
+                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="rGt-Rq-3AI"/>
                                                 </connections>
                                             </slider>
                                         </subviews>
@@ -132,7 +132,7 @@
                     <connections>
                         <outlet property="blueSlider" destination="PZe-OK-AQx" id="ddz-ZM-f1D"/>
                         <outlet property="bluerLable" destination="DOy-Yh-pTm" id="Nby-n3-tiJ"/>
-                        <outlet property="changeableColorView" destination="jl4-HA-LHx" id="aQk-Jf-h2l"/>
+                        <outlet property="colorView" destination="jl4-HA-LHx" id="aQk-Jf-h2l"/>
                         <outlet property="greenLabel" destination="4n3-Up-OS2" id="NDN-KV-xul"/>
                         <outlet property="greenSlider" destination="yQv-Pt-GrU" id="fmf-52-OTS"/>
                         <outlet property="redLabel" destination="5qa-wx-Vuw" id="bQS-yh-8Ux"/>
