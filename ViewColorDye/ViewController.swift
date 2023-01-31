@@ -41,17 +41,18 @@ class ViewController: UIViewController {
         redValueSliderLabel.text = String(format: "%.2f", (redSlider.value))
         greenValueSliderLabel.text = String(format: "%.2f", (greenSlider.value))
         blueValueSliderLable.text = String(format: "%.2f", (blueSlider.value))
-        changeColor()
         
-    }
-    
-    func changeColor (){
-        changeableColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+        changeColor()
         
     }
     
     
     // MARK: - Private Methods
+    
+    private  func changeColor (){
+         changeableColorView.backgroundColor = UIColor(red: CGFloat(redSlider.value), green: CGFloat(greenSlider.value), blue: CGFloat(blueSlider.value), alpha: 1)
+         
+     }
 
     private func setupSlider(){
         
@@ -72,28 +73,28 @@ class ViewController: UIViewController {
         greenValueSliderLabel.text = String(format: "%.2f", (greenSlider.value))
         blueValueSliderLable.text = String(format: "%.2f", (blueSlider.value))
         
-        redValueSliderLabel.textColor = .red
+        redValueSliderLabel.textColor = .white
         redValueSliderLabel.font = redValueSliderLabel.font.withSize(15)
         
-        greenValueSliderLabel.textColor = .green
+        greenValueSliderLabel.textColor = .white
         greenValueSliderLabel.font = greenValueSliderLabel.font.withSize(15)
         
-        blueValueSliderLable.textColor = .blue
+        blueValueSliderLable.textColor = .white
         blueValueSliderLable.font = blueValueSliderLable.font.withSize(15)
     }
     
     private func setupColoredLabel(){
         redNameLabel.text = "Red"
         redNameLabel.font = redNameLabel.font.withSize(15)
-        redNameLabel.textColor = .red
+        redNameLabel.textColor = .white
         
         greenColorLabel.text = "Green"
         greenColorLabel.font = greenColorLabel.font.withSize(15)
-        greenColorLabel.textColor = .green
+        greenColorLabel.textColor = .white
         
         blueColorLabel.text = "Blue"
         blueColorLabel.font = blueColorLabel.font.withSize(15)
-        blueColorLabel.textColor = .blue
+        blueColorLabel.textColor = .white
     }
 
 
