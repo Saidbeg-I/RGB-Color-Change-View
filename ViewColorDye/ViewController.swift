@@ -30,12 +30,7 @@ class ViewController: UIViewController {
         setupSlider()
         
         colorView.layer.cornerRadius = 15
-        
-        colorView.backgroundColor = UIColor(
-            red: CGFloat(redSlider.value),
-            green: CGFloat(greenSlider.value),
-            blue: CGFloat(blueSlider.value), alpha: 1
-        )
+        changeColor()
         
         
     }
@@ -43,11 +38,9 @@ class ViewController: UIViewController {
     //MARK: - IBAction
     
     @IBAction func rgbColorSlider() {
-        redLabel.text = String(format: "%.2f", (redSlider.value))
-        greenLabel.text = String(format: "%.2f", (greenSlider.value))
-        bluerLable.text = String(format: "%.2f", (blueSlider.value))
-        
+        setupSlider()
         changeColor()
+        setupLabel()
         
     }
     

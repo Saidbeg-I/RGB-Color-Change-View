@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewColorDye" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jUq-ya-rEZ">
-                                <rect key="frame" x="25" y="40" width="325" height="128"/>
+                                <rect key="frame" x="25" y="84" width="364" height="128"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jl4-HA-LHx">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="128"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="tintColor" systemColor="tintColor"/>
                                     </view>
@@ -30,7 +30,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="gnZ-YO-lPo">
-                                <rect key="frame" x="16" y="228" width="343" height="110"/>
+                                <rect key="frame" x="16" y="272" width="382" height="110"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YeU-GE-lCZ">
                                         <rect key="frame" x="0.0" y="8" width="39.5" height="94"/>
@@ -85,22 +85,22 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="M39-ZK-vKm">
-                                        <rect key="frame" x="120.5" y="0.0" width="222.5" height="110"/>
+                                        <rect key="frame" x="120.5" y="0.0" width="261.5" height="110"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3JK-b3-gND">
-                                                <rect key="frame" x="-2" y="0.0" width="226.5" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="265.5" height="31"/>
                                                 <connections>
                                                     <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="VCc-2B-S1G"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-Pt-GrU">
-                                                <rect key="frame" x="-2" y="40" width="226.5" height="31"/>
+                                                <rect key="frame" x="-2" y="40" width="265.5" height="31"/>
                                                 <connections>
                                                     <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="siV-BA-x6g"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-OK-AQx">
-                                                <rect key="frame" x="-2" y="80" width="226.5" height="31"/>
+                                                <rect key="frame" x="-2" y="80" width="265.5" height="31"/>
                                                 <connections>
                                                     <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="rGt-Rq-3AI"/>
                                                 </connections>
