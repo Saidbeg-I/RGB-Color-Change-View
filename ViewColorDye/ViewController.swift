@@ -13,14 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet var greenSlider: UISlider!
     @IBOutlet var blueSlider: UISlider!
     
-    @IBOutlet var redNameLabel: UILabel!
-    @IBOutlet var redValueSliderLabel: UILabel!
-    
-    @IBOutlet var greenColorLabel: UILabel!
-    @IBOutlet var greenValueSliderLabel: UILabel!
-    
-    @IBOutlet var blueValueSliderLable: UILabel!
-    @IBOutlet var blueColorLabel: UILabel!
+    @IBOutlet var redLabel: UILabel!
+
+    @IBOutlet var greenLabel: UILabel!
+    @IBOutlet var bluerLable: UILabel!
     
     @IBOutlet var changeableColorView: UIView!
     
@@ -28,7 +24,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupColoredLabel()
         setupValueSliderLabel()
         setupSlider()
         changeableColorView.layer.cornerRadius = 15
@@ -38,9 +33,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func rgbChangesColorSlider() {
-        redValueSliderLabel.text = String(format: "%.2f", (redSlider.value))
-        greenValueSliderLabel.text = String(format: "%.2f", (greenSlider.value))
-        blueValueSliderLable.text = String(format: "%.2f", (blueSlider.value))
+        redLabel.text = String(format: "%.2f", (redSlider.value))
+        greenLabel.text = String(format: "%.2f", (greenSlider.value))
+        bluerLable.text = String(format: "%.2f", (blueSlider.value))
         
         changeColor()
         
@@ -70,33 +65,20 @@ class ViewController: UIViewController {
     
     private func setupValueSliderLabel(){
         
-        redValueSliderLabel.text = String(format: "%.2f", (redSlider.value))
-        greenValueSliderLabel.text = String(format: "%.2f", (greenSlider.value))
-        blueValueSliderLable.text = String(format: "%.2f", (blueSlider.value))
+        redLabel.text = String(format: "%.2f", (redSlider.value))
+        greenLabel.text = String(format: "%.2f", (greenSlider.value))
+        bluerLable.text = String(format: "%.2f", (blueSlider.value))
         
-        redValueSliderLabel.textColor = .white
-        redValueSliderLabel.font = redValueSliderLabel.font.withSize(15)
+        redLabel.textColor = .white
+        redLabel.font = redLabel.font.withSize(15)
         
-        greenValueSliderLabel.textColor = .white
-        greenValueSliderLabel.font = greenValueSliderLabel.font.withSize(15)
+        greenLabel.textColor = .white
+        greenLabel.font = greenLabel.font.withSize(15)
         
-        blueValueSliderLable.textColor = .white
-        blueValueSliderLable.font = blueValueSliderLable.font.withSize(15)
+        bluerLable.textColor = .white
+        bluerLable.font = bluerLable.font.withSize(15)
     }
     
-    private func setupColoredLabel(){
-        redNameLabel.text = "Red"
-        redNameLabel.font = redNameLabel.font.withSize(15)
-        redNameLabel.textColor = .white
-        
-        greenColorLabel.text = "Green"
-        greenColorLabel.font = greenColorLabel.font.withSize(15)
-        greenColorLabel.textColor = .white
-        
-        blueColorLabel.text = "Blue"
-        blueColorLabel.font = blueColorLabel.font.withSize(15)
-        blueColorLabel.textColor = .white
-    }
 
 
 }
