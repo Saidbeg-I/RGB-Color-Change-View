@@ -90,19 +90,19 @@
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3JK-b3-gND">
                                                 <rect key="frame" x="-2" y="0.0" width="265.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="VCc-2B-S1G"/>
+                                                    <action selector="rgbColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="U6K-rc-5U2"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-Pt-GrU">
                                                 <rect key="frame" x="-2" y="40" width="265.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="siV-BA-x6g"/>
+                                                    <action selector="rgbColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="1sq-3F-joq"/>
                                                 </connections>
                                             </slider>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PZe-OK-AQx">
                                                 <rect key="frame" x="-2" y="80" width="265.5" height="31"/>
                                                 <connections>
-                                                    <action selector="rgbColorSlider" destination="BYZ-38-t0r" eventType="valueChanged" id="rGt-Rq-3AI"/>
+                                                    <action selector="rgbColorSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="0Jj-Eh-zCM"/>
                                                 </connections>
                                             </slider>
                                         </subviews>

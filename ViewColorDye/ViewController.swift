@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupLabel()
         setupSlider()
+        setValueLabel(for: redLabel, greenLabel, bluerLable)
         
         colorView.layer.cornerRadius = 15
         changeColor()
@@ -37,11 +38,17 @@ class ViewController: UIViewController {
     
     //MARK: - IBAction
     
-    @IBAction func rgbColorSlider() {
-        setupSlider()
+    @IBAction func rgbColorSlider(_ sender: UISlider) {
         changeColor()
-        setupLabel()
         
+        switch sender {
+        case redSlider:
+            setValueLabel(for: redLabel)
+        case greenSlider:
+            setValueLabel(for: greenLabel)
+        default:
+            setValueLabel(for: bluerLable)
+        }
     }
     
     
@@ -68,11 +75,6 @@ class ViewController: UIViewController {
         
     }
     private func setupLabel(){
-        
-        redLabel.text = String(format: "%.2f", (redSlider.value))
-        greenLabel.text = String(format: "%.2f", (greenSlider.value))
-        bluerLable.text = String(format: "%.2f", (blueSlider.value))
-        
         redLabel.textColor = .white
         redLabel.font = redLabel.font.withSize(15)
         
@@ -82,6 +84,24 @@ class ViewController: UIViewController {
         bluerLable.textColor = .white
         bluerLable.font = bluerLable.font.withSize(15)
     }
+    
+    private func setValueLabel(for label: UILabel...) {
+        label.forEach { label in
+            switch label {
+            case redLabel:
+                redLabel.text = string(for: redSlider)
+            case greenLabel:
+                greenLabel.text = string(for: greenSlider)
+            default:
+                bluerLable.text = string(for: blueSlider)
+            }
+        }
+    }
+    private func string(for slider: UISlider) -> String {
+           String(format: "%.2f", (slider.value))
+        
+    }
+                  
 
 }
 
